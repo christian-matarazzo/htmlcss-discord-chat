@@ -9,13 +9,19 @@
 body {
 
     max-width: 512px; /* force mobile rateo */
+    
+}
 
+img, .server-icon {
+    max-width: 100%;
+    height: auto;
 }
 
 main {
     flex-grow:1;
     overflow:auto;
     display: relative;
+    margin-top: 10px;
 }
 
 .wrapper {
@@ -27,18 +33,48 @@ main {
 
 .central-wrapper {
 
-       background-color: rgb(28, 29, 34);
+    background-color: rgb(28, 29, 34);
     flex-grow: 1;
     display: flex;
     overflow: hidden;
 }
+/* sidebar */
+.sidebar {
 
-.sidebar{
-
-    width:60px;
-    background-color: rgb(20, 19, 24);
-    flex-shrink:0;
+    width:100px;
+    background-color: hsl(252, 12%, 8%);
+    flex-shrink: 0;
+    display: flex;
+    
 }
+
+
+.side-icon{
+
+    width:70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 15px;
+
+}
+
+
+.rounded {
+
+    border: solid 1px none;
+    border-radius: 50%;
+}
+
+/* sidebar */
+
+
+
+
+
+
 footer {
 
     height: 80px;
@@ -46,7 +82,7 @@ footer {
     flex-shrink: 0;
 }
 
-
+/* top and buttons */
 .message-title{
 
     color: white;
@@ -89,9 +125,10 @@ footer {
     gap: 8px;
     font-size: 20px;
 }
+/* top and buttons */
 
 
-
+/* contacts */
 .contacts {
     display: flex;
     flex-direction: column;
@@ -137,10 +174,4 @@ footer {
     font-size: 12px;
     flex-shrink: 0;
 }
-
-
-
-
-
-
-
+/* contacts */
