@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+} 
+
+
+body {
+
+    max-width: 512px; /* force mobile rateo */
+
+}
+
+main {
+    flex-grow:1;
+    overflow:auto;
+}
+
+.wrapper {
+
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.central-wrapper {
+
+       background-color: blue;
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar{
+
+    width:60px;
+    background-color: brown;
+    flex-shrink:0;
+}
+footer {
+
+    height: 80px;
+    background-color: red;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
