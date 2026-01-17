@@ -133,8 +133,8 @@ main {
     gap: 24px;
     padding: 20px;
     overflow-y: auto;
-  position: relative; /* Crea un riferimento per i figli absolute */
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-row {
@@ -267,10 +267,10 @@ main {
     border-radius: 25%;
     width: 50px;
     height: 70px;
-    
+
     color: rgb(247, 245, 245);
     border: solid 10px;
-    transform:translate(-117%, 2%);
+    transform: translate(-117%, 2%);
 }
 
 
@@ -283,14 +283,13 @@ main {
     color: white;
 }
 
-.rounded:hover{
+.rounded:hover {
     transform: scale(1.2);
 
 }
 
 
-.footer-icon:hover{
+.footer-icon:hover {
     transform: scale(1.2);
 
 }
-
