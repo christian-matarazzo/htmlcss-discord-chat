@@ -21,7 +21,6 @@ img,
 main {
     flex-grow: 1;
     overflow: auto;
-    display: relative;
     margin-top: 10px;
 }
 
@@ -60,7 +59,7 @@ main {
     gap: 30px;
     margin-top: 50px;
     margin-left: 15px;
-
+    position: relative;
 }
 
 
@@ -82,7 +81,7 @@ main {
 
 
 .message-title {
-    font-family:  Inter;
+    font-family: Inter;
     color: white;
     margin-left: 25px;
     margin-top: 25px;
@@ -133,6 +132,9 @@ main {
     flex-direction: column;
     gap: 24px;
     padding: 20px;
+    overflow-y: auto;
+  position: relative; /* Crea un riferimento per i figli absolute */
+  z-index: 1;
 }
 
 .contact-row {
@@ -154,7 +156,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    font-family:  Inter;
+    font-family: Inter;
 }
 
 .name {
@@ -182,10 +184,9 @@ main {
 
 .footer {
     display: flex;
-    gap: 5.5rem;
-    height: 80px;
+    gap: 2rem;
+    min-height: 100px;
     background-color: rgb(45, 45, 53);
-    display: flex;
     padding-left: 30px;
 }
 
@@ -203,7 +204,7 @@ main {
     align-items: center;
     justify-content: center;
     color: white;
-    font-family:  Inter;
+    font-family: Inter;
 }
 
 .footer-img {
@@ -221,41 +222,75 @@ main {
 
 /* bonus */
 .red-circle {
-  position: absolute;     
-  width: 14px;            
-  height: 14px;
-  border: 3.5px solid;
-  background-color: rgba(255, 0, 0, 0.769);  
-  border-radius: 50%; 
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 3.5px solid;
+    background-color: rgba(255, 0, 0, 0.769);
+    border-radius: 50%;
 
-  transform:translate(2rem,1rem);
- 
+    transform: translate(2rem, 1rem);
+
 
 }
 
 
 .orange-circle {
-  position: absolute;     
-  width: 14px;            
-  height: 14px;
-  border: 3.5px solid;
-  background-color: hsl(39, 91%, 53%);
-  border-radius: 50%; 
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 3.5px solid;
+    background-color: hsl(39, 91%, 53%);
+    border-radius: 50%;
 
-  transform:translate(2rem,1rem);
- 
+    transform: translate(2rem, 1rem);
+
 
 }
 
 .green-circle {
-  position: absolute;     
-  width: 14px;            
-  height: 14px;
-  border: 3.5px solid;
-  background-color: hsl(140, 49%, 44%);
-  border-radius: 50%; 
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 3.5px solid;
+    background-color: hsl(140, 49%, 44%);
+    border-radius: 50%;
 
-  transform:translate(2rem,1rem);
- 
+    transform: translate(2rem, 1rem);
+
 
 }
+
+.side-selector {
+
+    position: absolute;
+    border-radius: 25%;
+    width: 50px;
+    height: 70px;
+    
+    color: rgb(247, 245, 245);
+    border: solid 10px;
+    transform:translate(-117%, 2%);
+}
+
+
+.contact-row:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+
+.name:hover {
+    color: white;
+}
+
+.rounded:hover{
+    transform: scale(1.2);
+
+}
+
+
+.footer-icon:hover{
+    transform: scale(1.2);
+
+}
+
